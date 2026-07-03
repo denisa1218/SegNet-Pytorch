@@ -1,1 +1,97 @@
-.ipynb_checkpoints
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+venv39/
+
+# PyCharm / IDE
+.idea/
+*.iml
+.vscode/
+
+# Environment files
+.env
+.env.*
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+log/
+*.log
+runs/
+train_logs/
+test_logs/
+train_logs_rand/
+tensorboard/
+
+# Datasets / data
+data/
+dataset/
+datasets/
+Datasets/
+images/
+masks/
+annotations/
+
+# Model weights / checkpoints
+*.pth
+*.pt
+*.h5
+*.hdf5
+*.ckpt
+*.onnx
+*.pb
+*.tflite
+
+weights/
+checkpoints/
+checkpoint/
+models/
+model/
+pretrained/
+pretrained_models/
+saved_models/
+
+# Training outputs
+outputs/
+output/
+results/
+result/
+predictions/
+prediction/
+experiments/
+exp/
+
+# Numpy / cache files
+*.npy
+*.npz
+*.pkl
+*.pickle
+cache/
+.cache/
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
