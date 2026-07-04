@@ -30,11 +30,11 @@ import torch.optim as optim
 DATASET = "Vaihingen"
 
 # Change this if your dataset is located elsewhere
-ROOT = "./ISPRS_dataset/Vaihingen"
+ROOT = r"C:\Users\denisa.barb\Desktop\Disertatie\ISPRS_semantic_labeling_Vaihingen"
 
 DATA_FOLDER = os.path.join(ROOT, "top", "top_mosaic_09cm_area{}.tif")
 LABEL_FOLDER = os.path.join(ROOT, "gts_for_participants", "top_mosaic_09cm_area{}.tif")
-ERODED_FOLDER = os.path.join(ROOT, "gts_eroded_for_participants", "top_mosaic_09cm_area{}_noBoundary.tif")
+ERODED_FOLDER = LABEL_FOLDER
 
 WINDOW_SIZE = (256, 256)
 BATCH_SIZE = 4
@@ -45,7 +45,12 @@ EPOCHS = 100
 SAVE_EPOCH = 10
 BASE_LR = 0.01
 
-TRAIN_IDS = ['1', '3', '23', '26', '7', '11', '13', '28', '17', '32', '34', '37']
+TRAIN_IDS =  [
+    '1', '2', '3', '4', '6', '7', '8', '9', '10',
+    '11', '12', '13', '14', '16', '17', '18', '19',
+    '20', '22', '23', '24', '25', '26', '27', '28',
+    '29', '31', '32', '33', '34', '35', '36', '37'
+]
 TEST_IDS = ['5', '21', '15', '30']
 
 RESULTS_DIR = "results_segnet"
